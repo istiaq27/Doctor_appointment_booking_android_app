@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="15dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/cart_doctor_name"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Doctor Name "
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/cart_doctor_hospital"
+            android:layout_below="@id/cart_doctor_name"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/cart_apt_date"
+            android:layout_below="@id/cart_doctor_hospital"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Appointment Date"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/cart_doctor_number"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="end"
+            android:layout_alignParentEnd="true"
+            android:text="Doctor Number "
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/cart_appointment_fees"
+            android:layout_below="@id/cart_doctor_number"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Fees"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:layout_alignParentRight="true"
+
+            />
+
+
+        <TextView
+            android:id="@+id/cart_appointment_timeslot"
+            android:layout_below="@id/cart_appointment_fees"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Appointment Time"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:layout_alignParentRight="true"
+
+            />
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

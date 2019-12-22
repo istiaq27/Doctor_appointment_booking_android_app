@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".AdminAddNewDoctorActivity">
+
+    <ImageView
+        android:id="@+id/select_doctor_image"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/select_doctor_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        />
+<RelativeLayout
+    android:id="@+id/rl4"
+    android:layout_below="@id/select_doctor_image"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    >
+    <EditText
+        android:id="@+id/doctor_name"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="Doctor Name "
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/input_design"
+        />
+
+    <EditText
+        android:id="@+id/doctors_speciality"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="3dp"
+        android:padding="5dp"
+        android:hint="Speciality"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/input_design"
+        />
+
+    <EditText
+        android:id="@+id/doctor_description"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doctor_name"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:hint="Details"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/input_design"
+        />
+
+    <EditText
+        android:id="@+id/doctor_address_add"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doctors_speciality"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:hint="Address"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/input_design"
+        />
+    <EditText
+        android:id="@+id/doctor_phone_number"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doctor_description"
+        android:inputType="number"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:hint="Phone Number"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/input_design"
+        />
+
+    <EditText
+        android:id="@+id/doctor_fees"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doctor_address_add"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:hint="Appointment Fees..."
+       android:layout_alignParentRight="true"
+        android:background="@drawable/input_design"
+        />
+
+    <TextView
+        android:id="@+id/select_dctr_slots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Your Appointment Slots:"
+        android:layout_below="@+id/doctor_phone_number"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/select_your_slots_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your slots"
+        android:layout_below="@id/select_dctr_slots"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:padding="10dp"
+        android:layout_marginTop="7dp"
+        />
+
+    <TextView
+        android:id="@+id/slotSelected"
+        android:layout_below="@id/select_your_slots_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/add_new_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl4"
+        android:text="Add Doctor"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:padding="10dp"
+        android:layout_marginTop="7dp"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttons"
+        />
+
+
+</RelativeLayout>

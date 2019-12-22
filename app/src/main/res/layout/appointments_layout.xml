@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/pt_name"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Patient Name "
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/pt_address"
+            android:layout_below="@id/pt_name"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/pt_phone"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="end"
+            android:layout_alignParentEnd="true"
+            android:text="Patient Phone "
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/pt_diseases"
+            android:layout_below="@id/pt_phone"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Disease"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:layout_alignParentRight="true"
+
+            />
+
+        <Button
+            android:id="@+id/show_all_doctors_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/pt_address"
+            android:background="@android:color/white"
+            android:text="Show Doctor Details"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

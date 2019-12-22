@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmFinalBookingActivity">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient Information"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="25dp"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:id="@+id/pt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Patient Name"
+        android:padding="20dp"
+        />
+
+    <EditText
+        android:id="@+id/pt_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pt_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Phone Number"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/pt_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pt_phone_number"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:padding="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Address"
+        />
+    <EditText
+        android:id="@+id/pt_disease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pt_address"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Diseases Details"
+        android:padding="20dp"
+        />
+
+    <Button
+        android:id="@+id/confirm_final_booking_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Confirm Appointment"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:inputType="textMultiLine"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:padding="20dp"
+
+        />
+
+
+</RelativeLayout>
